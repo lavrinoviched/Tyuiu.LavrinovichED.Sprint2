@@ -18,7 +18,7 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task1.V7
             bool[] res = new bool[6];
             res = ds.GetLogicOperations(a, b, c, d); 
 
-            Console.Title = "Спринт #1 | Выполнила: Лавринович Е.Д. | АСОиУБ - 24-1";
+            Console.Title = "Спринт #2 | Выполнила: Лавринович Е.Д. | АСОиУБ - 24-1";
             Console.WriteLine("***********************************************************************************");
             Console.WriteLine("* Спринт #2                                                                       *");
             Console.WriteLine("* Тема: Логические операции                                                       *");
