@@ -6,14 +6,14 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task4.V12.Lib
     {
         public double Calculate(double x, double y)
         {
-            double a = 2 / Math.Pow (y, 2);
-            double b = Math.Pow(7 + a, x) ;
-            double c = 3 * Math.Pow(x, 2) - Math.Cos(Math.Pow(y, 2)) + 10;
-            double d = Math.Pow(y, 2) - Math.Sin(Math.Pow(x, 2)) + 12;
-            double e = c / d; 
+            double a = 2 / (y*y);
+            double b = Math.Round(Math.Pow(7 + a, x), 3);
+            double c = 3 * x*x - Math.Pow(Math.Cos(y),2) + 10;
+            double d = y*y - Math.Sin(x*x) + 12;
+            double e = Math.Round ((c / d),3); 
 
-            double z = Math.Sin(x) > y * 2 ? b : e; 
-            return Math.Round (z, 3); 
+            double z = Math.Sqrt(x) > y * 2 ? b : e; 
+            return z; 
         }
     }
 }
