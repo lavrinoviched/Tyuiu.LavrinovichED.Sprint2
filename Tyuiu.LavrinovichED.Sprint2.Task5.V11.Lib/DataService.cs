@@ -62,10 +62,10 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task5.V11.Lib
 
                     }
 
-                    return  n + "." + a + "." + g;
+                    return  "0" + n + "." + a + "." + g;
 
-            
-            
+
+
         }
         
 
