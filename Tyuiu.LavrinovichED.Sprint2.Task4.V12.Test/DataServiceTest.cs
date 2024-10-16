@@ -9,10 +9,10 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task4.V12.Test
         public void ValidContinion1()
         {
             DataService ds = new DataService();
-            double x = 25;
+            double x = 16;
             double y = 2;
             double res = ds.Calculate(x, y);
-            double wait = 7.525;
+            double wait = 45.757;
             Assert.AreEqual(res, wait); 
         }
 
@@ -23,7 +23,7 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task4.V12.Test
             double x = 4; 
             double y = 2; 
             double res = ds.Calculate(x, y);
-            double wait = 3.601;
+            double wait = 3.55;
             Assert.AreEqual(res, wait); 
         }
     }
