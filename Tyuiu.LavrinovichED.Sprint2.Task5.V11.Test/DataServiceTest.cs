@@ -12,19 +12,15 @@ namespace Tyuiu.LavrinovichED.Sprint2.Task5.V11.Test
 
             int g = 2024;
             int m = 11;
-            int n = 13;
+            int n = 08;
 
-            Assert.AreEqual("14.11.2024", ds.FindDateOfNextDay(g, m, n));
-
+            Assert.AreEqual("09.11.2024", ds.FindDateOfNextDay(g, m, n));
 
             Assert.ThrowsException<ArgumentException>(() =>
-            {
-                ds.FindDateOfNextDay(2024, 11, 13);
-            });
+            { ds.FindDateOfNextDay(2024,11,08); });
+
             Assert.ThrowsException<ArgumentException>(() =>
-            {
-                ds.FindDateOfNextDay(2006, 12, 30);
-            });
+            { ds.FindDateOfNextDay(2006,06,03); });
         }
     }
 }
